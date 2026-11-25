@@ -1,6 +1,6 @@
 # Remittance Dataset Analysis
 
-A capstone data science project exploring remittance flows across company-to-country corridors. The project follows a data analysis workflow from data cleaning and preparation through exploratory and time-series analysis, with the goal of identifying patterns that may support forecasting.
+Exploring remittance flows across company-to-country corridors. The project follows a data analysis workflow from data cleaning and preparation through exploratory and time-series analysis, with the goal of identifying patterns that may support forecasting.
 
 ## Project Goal
 
