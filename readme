@@ -1,23 +1,35 @@
-# Capstone Project: Remittance Dataset Analysis
+# Remittance Dataset Analysis
 
-This project represents the culmination of my learning over the past 3 months. It applies the full Data Science pipeline—from raw data ingestion and cleaning to advanced time-series analysis—to a complex financial dataset.
+A capstone data science project exploring remittance flows across company-to-country corridors. The project follows a data analysis workflow from data cleaning and preparation through exploratory and time-series analysis, with the goal of identifying patterns that may support forecasting.
 
-## 🎯 Project Goal
-To analyze financial remittance flows across different "corridors" (Company $\rightarrow$ Country) and identify patterns of seasonality, volume, and behavior that can be used for forecasting.
+## Project Goal
 
-## 🚀 Key Analysis Performed
-- **Data Rigor:** Handled a dataset with significant missingness and temporal gaps using linear interpolation and reindexing to ensure a continuous daily timeline.
-- **Seasonality Analysis:** Employed **STL (Seasonal-Trend decomposition using LOESS)** to separate the underlying trend from weekly and monthly seasonal cycles.
-- **Behavioral Mapping:** Developed normalized heatmaps to visualize how different corridors exhibit unique patterns across days of the week and days of the month.
-- **Predictive Signal Search:** Conducted lag correlation analysis to determine how previous days' payout amounts influence future values.
+Analyze remittance volume and payout behavior across corridors (company → country), looking for trends, seasonality, and relationships between current and past values.
 
-## 📂 Project Files
-- **`remmitance_EDA.ipynb`**: The primary Exploratory Data Analysis notebook containing the full cleaning and visualization pipeline.
-- **`feature_engineering_model_training.ipynb`**: Focused on transforming the cleaned data into a format suitable for ML model training.
-- **`remittance_sliced.csv`**: The processed, cleaned, and reindexed version of the dataset.
+## Analysis
 
-## 🛠️ Technologies Used
-- **Pandas & NumPy**: For data manipulation and numerical analysis.
-- **Matplotlib & Seaborn**: For advanced visualization and heatmaps.
-- **Statsmodels**: For STL decomposition.
-- **Scikit-Learn**: For scaling and metrics.
+- **Data cleaning and preparation:** Address missing values and gaps in the daily timeline using reindexing and linear interpolation.
+- **Seasonality and trends:** Use STL (Seasonal-Trend decomposition using LOESS) to examine trend and seasonal components.
+- **Behavior by calendar date:** Create normalized heatmaps to compare activity across days of the week and days of the month.
+- **Lag relationships:** Explore correlations between previous days’ payout amounts and future values as a search for potentially useful predictive signals.
+
+## Project Files
+
+| File | Description |
+| --- | --- |
+| `remmitance_EDA.ipynb` | Exploratory data analysis notebook with the data-cleaning and visualization workflow. |
+| `feature_engineering_model_training.ipynb` | Notebook for feature engineering and preparing data for model training. |
+| `remittance_sliced.csv` | Processed dataset described in the notebooks as cleaned and reindexed. |
+
+## Technologies
+
+- **Pandas and NumPy** — data manipulation and numerical analysis
+- **Matplotlib and Seaborn** — visualizations and heatmaps
+- **Statsmodels** — STL decomposition
+- **Scikit-learn** — scaling and evaluation metrics
+
+## Getting Started
+
+Open the notebooks in Jupyter Notebook or JupyterLab to explore the analysis. Run the exploratory data analysis notebook before the feature engineering and model training notebook if the latter relies on data prepared in the former.
+
+> Note: The notebook filenames and dataset description above follow the files and details documented in this project README.
