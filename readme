@@ -1,0 +1,23 @@
+# Capstone Project: Remittance Dataset Analysis
+
+This project represents the culmination of my learning over the past 3 months. It applies the full Data Science pipeline—from raw data ingestion and cleaning to advanced time-series analysis—to a complex financial dataset.
+
+## 🎯 Project Goal
+To analyze financial remittance flows across different "corridors" (Company $\rightarrow$ Country) and identify patterns of seasonality, volume, and behavior that can be used for forecasting.
+
+## 🚀 Key Analysis Performed
+- **Data Rigor:** Handled a dataset with significant missingness and temporal gaps using linear interpolation and reindexing to ensure a continuous daily timeline.
+- **Seasonality Analysis:** Employed **STL (Seasonal-Trend decomposition using LOESS)** to separate the underlying trend from weekly and monthly seasonal cycles.
+- **Behavioral Mapping:** Developed normalized heatmaps to visualize how different corridors exhibit unique patterns across days of the week and days of the month.
+- **Predictive Signal Search:** Conducted lag correlation analysis to determine how previous days' payout amounts influence future values.
+
+## 📂 Project Files
+- **`remmitance_EDA.ipynb`**: The primary Exploratory Data Analysis notebook containing the full cleaning and visualization pipeline.
+- **`feature_engineering_model_training.ipynb`**: Focused on transforming the cleaned data into a format suitable for ML model training.
+- **`remittance_sliced.csv`**: The processed, cleaned, and reindexed version of the dataset.
+
+## 🛠️ Technologies Used
+- **Pandas & NumPy**: For data manipulation and numerical analysis.
+- **Matplotlib & Seaborn**: For advanced visualization and heatmaps.
+- **Statsmodels**: For STL decomposition.
+- **Scikit-Learn**: For scaling and metrics.
